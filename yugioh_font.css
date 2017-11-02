@@ -1,0 +1,17 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+
+
+#name_out {font-family:'Nanum Gothic', serif; font-size:30pt; font-weight:bold; color:#000000;}
+#name_out.axiz {color:#FFFFFF;}
+
+#inst_out {text-align:left; vertical-align:top; font-family:'Nanum Gothic', serif; font-size:10pt; color:#000000;}
+#tribe_out {font-family:'Nanum Gothic'; font-size:12pt; font-weight:bold; color:#000000;}
+
+#atk_out {font-family:'Nanum Gothic', serif; font-size:15pt; font-weight:bold; color:#000000;}
+#def_out {font-family:'Nanum Gothic', serif; font-size:15pt; font-weight:bold; color:#000000;}
+
+td {font-family:'Nanum Gothic', serif; font-size:15pt; font-weight:bold; color:#DBDBDB;}
+
+a:link {color:#DBDBDB;}
+a:visited {color:#DBDBDB;}

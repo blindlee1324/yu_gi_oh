@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+<head><title>login</title>
+<meta charset="UTF-8"; http-equiv="Content-Type" content="text/html"/>
+<style>@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html, body{width:100%;height:100%;}
+td {font-family:'Nanum Gothic', serif; font-size:13pt; font-weight:bold;}html, body{width:100%;height:100%;}
+a:link {color:blue;}
+a:visited {color:purple;}
+ #login{position:relative;top:200px;}
+</style>
+<script type="text/javascript" src="card_form.js"></script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<div id="login">
+	<form method="get" align="center" action="form_app.js">
+	<table width="300" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#9ACD32" style="border:0px #3333333 solid;border-top-width:3px;">
+		<tr>
+			<td colspan="2" align="center"><b>로 그 인<b></td>
+		</tr>
+		<tr>
+    <td width="100" bgcolor="#32CD32">아이디</td>
+    <td bgcolor="#E8E8E8">
+     <input type="text" name="userid" id="userid"size="20" tabindex="1"> 
+  </td>
+   <tr>
+    <td bgcolor="32CD32">암호</td>
+    <td bgcolor="#E8E8E8">
+     <input type="password" name="password" id="password" size="20" tabindex="2">
+    </td>
+	<tr>
+		<td colspan="2" align="center"><small>회원이 아니신가요?</small> <a href="signin.html" name="회원가입">회원가입</a></td>
+	</tr>
+   </tr>
+	<tr>
+    <td colspan="2" align="center">
+    <input type="submit" name="submit" value="확인">
+    <input type="reset" name="reset" value="취소">
+    </td>
+   </tr>
+	</table>
+	</div>
+	</form>
+</body>
+</html>

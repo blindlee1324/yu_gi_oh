@@ -1,0 +1,84 @@
+﻿
+<html>
+<head><title> 유희왕 카드 제작소 </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <link href="../css/global.css" rel="stylesheet" type="text/css">
+<style>@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html, body{width:100%;height:100%;}
+td {font-family:'Nanum Gothic', serif; font-size:13pt; font-weight:bold;}
+ #signin{position:relative;top:100px}
+</style>
+ </head>
+
+ <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+ <div id="signin">
+ <table width="500" border="0" align="center" cellpadding="5" cellspacing="0" bgcolor="#9ACD32" style="border:0px #3333333 solid;border-top-width:3px;">
+  <tr>
+   <td align="center"><b>유희왕 카드 제작소에 오신것을 환영합니다!<b></td>
+   <td align="right">&nbsp;</td>
+  </tr>
+ </table>
+ <br>
+  <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+    <td align="center"><font color='#DBDBDB'><b>정확히 입력하신 후 등록하세요!! &quot;<font color="#FF0000">*</font>&quot;는 필수 입력사항입니다. </font></b></td>
+   </tr>
+  </table>
+  <br>
+  
+  <form action="user_add_ok.php"method="post" name="user_form" id="user_form" style="margin:0px;" onSubmit="return checkForm(this)">
+  
+  <table width="500" border="0" align="center" cellpadding="5" cellspacing="1">
+   <tr>
+    <td width="100" bgcolor="#32CD32"><font color="#FF0000">*</font>아이디</td>
+    <td bgcolor="#E8E8E8">
+     <input type="text" name="userid" id="userid" size="20" tabindex="1"> 
+
+     <input type = "hidden" name='id_check' value="">
+     <input type="button" name="Button" value="중복체크" onclick="checkid(this.form);">
+    </td>
+   
+   <tr>
+    <td bgcolor="32CD32"><font color="#FF0000">*</font>암호</td>
+    <td bgcolor="#E8E8E8">
+     <input type="password" name="password" id="password" size="20" tabindex="2">
+    </td>
+   </tr>
+
+   <tr>
+    <td bgcolor="#32CD32"><font color="#FF0000">*</font>암호확인</td>
+    <td bgcolor="#E8E8E8">
+     <input type="password" name="password_re" id="password_re" size="20" tabindex="3">
+    </td>
+   </tr>
+
+   <tr>
+    <td bgcolor="#32CD32"><font color="#FF0000">*</font>이름</td>
+    <td bgcolor="#E8E8E8">
+     <input type="text" name="name" id="name" size="20" tabindex="4"> 예) 홍길동
+    </td>
+   </tr>
+
+   <tr>
+    <td bgcolor="#32CD32"><font color="#FF0000">*</font>E 메일</td>
+    <td bgcolor="#E8E8E8">
+     <input type="text" name="email" id="email" size="30" tabindex="5"> <br>예) abc123@abc.com
+    </td>
+   </tr>
+  </table>
+  <br>
+
+  <table width="500" height="40" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#9ACD32" style=border:0px #333333 solid; border-bottom-width:3px;''>
+   <tr>
+    <td align="center">
+    <input type="submit" name="submit" value="등록합니다.">
+    <input type="reset" name="reset" value="취소">
+    </td>
+   </tr>
+  </table>
+ </div>
+ </form>
+
+ </body>
+</html>
+

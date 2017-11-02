@@ -1,0 +1,122 @@
+﻿<!--마법-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="yugioh_font.css"/>
+	<meta charset="UTF-8">
+	<title>spell</title>
+	<script type="text/javascript" src="card_form.js"></script>
+
+</head>
+<body>
+	<!--큰테이블 시작 -->
+	<table align="center" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="958" width="658" style="background-image:url(pictures/spell.jpg);word-break;breaj-all; id="cardbg">
+
+	<!-- 카드부분 -->
+	<!-- 위꼭다리 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="55" width="658"></td>
+		</tr>
+	</table>
+	<!-- 이름부 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="70" width="65"></td>
+			<td width="510" id="name_out"></td>
+			<td width="70" align="center"></td>
+			<td width="33"></td>
+		</tr>
+	</table>
+	<!-- 레벨부 노쓸모 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="50" width="65"></td>
+			<td width="526" align="right" id="type_out"><img src=pictures/spell_type1.png></td>
+			<td width="67"></td>
+		</tr>
+	</table>
+
+	<!-- 사진상단 여백 -->
+	<table align="center" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="14" width="658"></td>
+		</tr>
+	</table>
+
+	<!--사진부-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="515" width="70"></td>
+			<td width="515" align="center"><img src="pictures/sample.jpg"></td>
+			<td width="73"></td>
+		</tr>
+	</table>
+
+	<!-- 사진하단 여백 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="35" width="658"></td>
+		</tr>
+	</table>
+	
+	<!--설명부 하-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="140" width="75"></td>
+			<td width="540" id="inst_out"></td>
+			<td width="80"></td>
+		</tr>
+	</table>
+
+	<!-- 공격/수비 노쓸모-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="40" width="484" align="right"><b></td>
+			<td width="128" align="right"><b></td>
+			<td width="44"></td>
+		</tr>
+	</table>
+	<!-- 아래꼭다리 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="25" width="658"></td>
+		</tr>
+	</table>
+	</td>
+
+	<!-- 입력 폼 -->
+	<td width="542" id=cardinput>
+		&nbsp;글 제 목 : <input type="text" name="title" size="50" required/><br><br><br>
+
+		&nbsp;카드이름 : <input type="text" size="50" maxlength="20" name="cd_name" onKeyUp="name_out(this.value);" required/><br><br>
+
+		&nbsp;마법분류 : <input type="radio" name="spell_type" id="normal" value="1" onclick="ChangeSpellType(1);" checked/><label for="normal">일반</label>
+			    <input type="radio" name="spell_type" id="lasting" value="2" onclick="ChangeSpellType(2);"/><label for="lasting">지속</label>
+			    <input type="radio" name="spell_type" id="equip" value="3" onclick="ChangeSpellType(3);"/><label for="equip">장착</label>
+			    <input type="radio" name="spell_type" id="swift" value="4" onclick="ChangeSpellType(4);"/><label for="swift">속공</label>
+			    <input type="radio" name="spell_type" id="field" value="5" onclick="ChangeSpellType(5);"/><label for="field">필드</label>
+			    <input type="radio" name="spell_type" id="cons" value="6" onclick="ChangeSpellType(6);"/><label for="cons">의식</label><br><br>
+		 
+
+		&nbsp;설명 : <br>&nbsp;<textarea name="cd_inst" cols="60" rows="10" onKeyUp="inst_out(this.value);"></textarea><br><br>
+
+		&nbsp;카드 사진 <small>(※515x515 픽셀 권장)</small><br>
+		&nbsp;<input type="file" name="cd_image"/><br><br><hr>
+		
+		&nbsp;<input type="submit" value="완성!"/> &nbsp;<input type="reset" value="다시작성"/>
+	
+
+
+	</td>
+
+
+
+	</tr>
+	<!-- 테이블 끝-->
+
+</body>
+</html>

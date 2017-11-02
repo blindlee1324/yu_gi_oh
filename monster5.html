@@ -1,0 +1,153 @@
+﻿<!--엑시즈몬스터-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="yugioh_font.css"/>
+	<meta charset="UTF-8">
+	<title>axiz</title>
+	<script type="text/javascript" src="card_form.js"></script>
+</head>
+<body>
+	<!--큰테이블 시작 -->
+	<table align="center" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="958" width="658" style="background-image:url(pictures/axiz.jpg);word-break;breaj-all; id="cardbg">
+
+	<!-- 카드부분 -->
+	<!-- 위꼭다리 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="25" width="658"></td>
+		</tr>
+	</table>
+	<!-- 이름부 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="70" width="40"></td>
+			<td width="480" id="name_out" class="axiz"></td>
+			<td width="40" align="center" id="element_out"><img src='pictures/element1.png' width='60' height='60'></td>
+			<td width="33"></td>
+		</tr>
+	</table>
+	<!-- 레벨부 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="60" width="70"></td>
+			<td width="525" align="left" id="level_out"><img src='pictures/level_axiz.png'></td>
+			<td width="67"></td>
+		</tr>
+	</table>
+
+	<!-- 사진상단 여백 -->
+	<table align="center" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="0" width="658"></td>
+		</tr>
+	</table>
+
+	<!--사진부-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="515" width="70"></td>
+			<td width="515" align="center"><img src="pictures/sample.jpg"></td>
+			<td width="73"></td>
+		</tr>
+	</table>
+
+	<!-- 사진하단 여백 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="20" width="658"></td>
+		</tr>
+	</table>
+	<!-- 설명부 상-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="40" width="65"></td>
+			<td width="613" id="tribe_out"></td>
+		</tr>
+	</table>
+
+	<!--설명부 하-->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="110" width="65"></td>
+			<td width="540" id="inst_out"></td>
+			<td width="60"></td>
+		</tr>
+	</table>
+
+	<!-- 공격/수비 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="50" width="450" align="right" id="atk_out"></td>
+			<td width="120" align="right" id="def_out"></td>
+			<td width="33"></td>
+		</tr>
+	</table>
+	<!-- 아래꼭다리 -->
+	<table align="center" border="0"cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="25" width="658"></td>
+		</tr>
+	</table>
+	</td>
+
+	<!-- 입력 폼 -->
+	<td width="542" id=cardinput>
+<table border="0" cellspacing="0" cellpadding="0" width="200" height="200">
+		<tr><td>
+		<ul><li><a href="monster1.html">일반몬스터</a>
+				<li><a href="monster2.html">효과몬스터</a></li>
+				<li><a href="monster3.html">융합몬스터</a></li>
+				<li><a href="monster4.html">싱크로몬스터</a></li>
+				<li><a href="monster5.html">엑시즈몬스터</a></li></ul></td></tr></table>
+		
+		&nbsp;글 제 목 : <input type="text" name="title" size="50" required/><br><br><br>
+
+		&nbsp;카드이름 : <input type="text" size="50" maxlength="20" name="cd_name" onKeyUp="name_out(this.value);" required/><br><br>
+
+		&nbsp;속성 : <input type="radio" name="cd_element" id="earth" value="1" onclick="ChangeElement(1)" checked/><label for="earth">땅</label> 
+			<input type="radio" name="cd_element" id="water" value="2" onclick="ChangeElement(2)"/><label for="water">물</label>
+			<input type="radio" name="cd_element" id="fire" value="3" onclick="ChangeElement(3)"/><label for="fire">화염</label>
+			<input type="radio" name="cd_element" id="wind" value="4" onclick="ChangeElement(4)"/><label for="wind">바람</label>
+			<input type="radio" name="cd_element" id="light" value="5" onclick="ChangeElement(5)"/><label for="light">빛</label>
+			<input type="radio" name="cd_element" id="darkness" value="6" onclick="ChangeElement(6)"/><label for="darkness">어둠</label><br><br>
+
+		&nbsp;레벨 : <select name="cd_level" size="1" onchange="ChangeLevel_axiz(this.value);">
+			<option value="1" selected>01레벨</option>
+			<option value="2">02레벨</option>
+			<option value="3">03레벨</option>
+			<option value="4">04레벨</option>
+			<option value="5">05레벨</option>
+			<option value="6">06레벨</option>
+			<option value="7">07레벨</option>
+			<option value="8">08레벨</option>
+			<option value="9">09레벨</option>
+			<option value="10">10레벨</option>
+			<option value="11">11레벨</option>
+			<option value="12">12레벨</option></select><br><br>
+
+		&nbsp;종족 : <input type="text" style="width:110;font-size:9pt" maxlength="10" name="cd_tribe" onKeyUp="tribe_out(this.value);" required/><br><br>
+
+		&nbsp;공격력 : <input type="text" name="cd_atk" maxlength="4" style="width:50x;" onKeyUp="atk_out(this.value);"/> &nbsp; 수비력 : <input type="text" name="cd_def" maxlength="4" style="width:50x;" onKeyUp="def_out(this.value);"/><br><br>
+
+		&nbsp;설명 : <br>&nbsp;<textarea name="cd_inst" cols="60" rows="10" onKeyUp="inst_out(this.value);"></textarea><br><br>
+
+		&nbsp;카드 사진 <small>(※515x515 픽셀 권장)</small><br>
+		&nbsp;<input type="file" name="cd_image"/><br><br><hr>
+		
+		&nbsp;<input type="submit" value="완성!"/> &nbsp;<input type="reset" value="다시작성"/>
+
+
+
+	</td>
+
+
+
+	</tr>
+	<!-- 테이블 끝-->
+
+</body>
+</html>
